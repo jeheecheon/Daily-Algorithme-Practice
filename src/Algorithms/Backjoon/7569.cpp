@@ -13,7 +13,7 @@ int main(void) {
     cin >> m >> n >> h;
     int board[n][m][h];
     int dist[n][m][h];
-    fill(&dist[0][0][0], &dist[0][0][0] + n * m * 2, 0);
+    fill(&dist[0][0][0], &dist[0][0][0] + n * m * h, 0);
 
     queue<tuple<int, int, int>> Q;
     for (int z = 0; z < h; ++z)
